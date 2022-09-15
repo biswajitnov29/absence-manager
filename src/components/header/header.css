@@ -1,0 +1,41 @@
+.site-header {
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    padding: 16px 32px;
+    display: flex;
+}
+.site-header>ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.site-header li {
+    margin-bottom: 0;
+}
+.site-header-appname {
+    flex-grow: 0;
+    color: #63aedb;
+}
+.site-header-menu {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+}
+.site-header-actionmenu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 32px;
+}
+.site-header-search {
+    position: static;
+}
+@media only screen and (max-width: 991px) {
+    .site-header-menu, .site-header-search, .site-header-actionmenu{
+        display: none;
+    }
+}

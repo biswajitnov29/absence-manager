@@ -1,0 +1,40 @@
+ul li,
+ol li {
+  font-weight: 300;
+  position: relative;
+  margin-bottom: 8px;
+}
+a {
+  color: #53759b;
+  text-decoration: none;
+  font-weight: 500;
+}
+.site-button {
+  background-color: #63aedb;
+  border: none;
+  color: #fff;
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 10px 26px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  border-radius: 4px;
+}
+.site-button.site-button-secondary {
+  background-color: transparent;
+  color: #131947;
+  border: 1px solid #63aedb;
+}
+.site-section {
+    background-color: #f7f7f7;
+    padding: 16px 0 16px;
+}
+.site-container {
+    padding-right: 16px;
+    padding-left: 16px;
+    margin-right: auto;
+    margin-left: auto;
+}

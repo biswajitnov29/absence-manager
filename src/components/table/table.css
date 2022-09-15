@@ -1,0 +1,102 @@
+.site-table {
+    position: relative;
+    border-bottom: 1px solid #53759b;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+.site-table .name-avatar {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.site-table thead tr:first-child th:first-child {
+    border-top-left-radius: 0;
+}
+
+.site-table thead th {
+    color: #131947;
+    text-align: left;
+    background: #cad7e0;
+    text-transform: uppercase;
+}
+
+.site-table caption,
+.site-table th,
+.site-table td {
+    padding: 10px 15px;
+    font-weight: 400;
+}
+
+.site-table td:nth-child(n+2) {
+    border-left: 1px dashed #53759b;
+}
+
+.site-table tbody tr:nth-child(even) td {
+    background: #edeeef;
+}
+
+.site-table .site-table-td-mobile {
+    display: none;
+}
+
+.site-table .site-table-td-span {
+    display: table-cell;
+}
+
+@media only screen and (max-width: 767px) {
+    .site-table thead tr {
+        display: none;
+    }
+
+    .site-table caption,
+    .site-table th,
+    .site-table td {
+        padding: 14px 20px;
+    }
+
+    .site-table thead tr:first-child th,
+    .site-table thead tr:last-child th {
+        background-color: #cad7e0;
+    }
+
+    .site-table tbody tr:nth-child(odd) td {
+        background: #fff;
+    }
+
+    .site-table td:first-child,
+    .site-table th:first-child {
+        background-color: #cad7e0 !important;
+        color: #53759b !important;
+        border-top: none !important;
+    }
+
+    .site-table caption,
+    .site-table th,
+    .site-table td {
+        padding: 14px 20px;
+        display: block;
+        border-left: none !important;
+    }
+    .site-table td:nth-child(n+3){
+        border-top: 1px dashed #53759b;
+    }
+
+    .site-table .site-table-td-span {
+        display: none;
+    }
+
+    .site-table .site-table-td-mobile {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+    .site-table .site-table-td-mobile h3 {
+        margin: 0px;
+    }
+
+}
