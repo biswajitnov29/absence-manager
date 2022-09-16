@@ -3,10 +3,10 @@ import SitePagination from "../pagination/pagination";
 import "./table.css";
 
 type SiteTableProps = {
-    list:any[]
-}
+  list: any[];
+};
 
-const SiteTable = (props:SiteTableProps) => {
+const SiteTable = (props: SiteTableProps) => {
   const [paginatedResult, setPaginatedResult] = useState<any[]>([]);
   const PAGE_SIZE = 10;
 
@@ -38,7 +38,12 @@ const SiteTable = (props:SiteTableProps) => {
           </tr>
         </thead>
         <tbody>
-          {paginatedResult.map((data: any, index:number) => (
+          {paginatedResult.length === 0 && (
+            <tr>
+              <td colSpan={6}>No Absence Report Found</td>
+            </tr>
+          )}
+          {paginatedResult.map((data: any, index: number) => (
             <tr key={index}>
               <td>{data.name}</td>
               <td>
