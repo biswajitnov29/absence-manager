@@ -1,15 +1,6 @@
 # Do not change version. This is the version of aws buildspec, not the version of your buldspec file.
 version: 0.2
 phases:
-  install:
-    commands:
-      - echo Installing Node 12...
-      - curl -fsSL https://rpm.nodesource.com/setup_14.x | bash -
-      - sudo yum install nodejs
-      - echo Installing Yarn...
-      - curl --silent --location https://dl.yarnpkg.com/rpm/yarn.repo | sudo tee /etc/yum.repos.d/yarn.repo
-      - sudo rpm --import https://dl.yarnpkg.com/rpm/pubkey.gpg
-      - sudo yum install yarn
   pre_build:
     commands:
       - echo Installing dependencies...
