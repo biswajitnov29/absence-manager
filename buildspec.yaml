@@ -4,6 +4,7 @@ phases:
   pre_build:
     commands:
       - echo Installing dependencies...
+      - yarn config set ignore-engines true
       - yarn
   build:
     commands:
