@@ -48,6 +48,14 @@
     display: table-cell;
 }
 
+td.site-table-td-first > span {
+    display: flex;
+    justify-content: space-between;
+}
+td.site-table-td-first > span > i {
+    cursor: pointer;
+}
+
 @media only screen and (max-width: 767px) {
     .site-table thead tr {
         display: none;
