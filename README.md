@@ -1,46 +1,53 @@
-# Getting Started with Create React App
+# Ansence Managaer
+Display absence list with filter option of status and date
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ ```bash
+ This Application worked best in Chrome browser
+ ```
 
-## Available Scripts
+## Table of contents
 
-In the project directory, you can run:
+- [Feature's included](#features-included)
+- [Dependencies](#dependencies)
+- [Project Setup](#project-setup)
+- [Run Application](#run-application)
+- [Build Application](#build-application)
+- [Running Unit Tests](#running-unit-tests)
 
-### `npm start`
+## Feature's included
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- [x] List absence list,
+- [x] Paginate list with 10 per page,
+- [x] Filter by absence type, status and date,
+- [x] Download `.ics` file to add in calender,
+- [x] Unit test with jest.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Dependencies:
 
-### `npm test`
+- ReactJs ,
+- Jest,
+- Typescript,
+- aws-amplify ( for aws deployment )
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Project Setup
 
-### `npm run build`
+- Download and install Node.js (https://nodejs.org/en/) to your computer,
+- Open `Node Command Prompt` and run command `npm  –v` to check node version,
+- Run `npm i` to install all project dependencies.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Run Application
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Run `npm start` for a dev server. Navigate to `http://localhost:3000/`. The app will automatically reload if you change any of the source files.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+ ```bash
+ This Application worked best in Chrome browser
+ ```
 
-### `npm run eject`
+## Build Application
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Run `npm run build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Running unit tests
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Run `npm test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
