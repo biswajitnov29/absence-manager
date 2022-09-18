@@ -3,22 +3,29 @@ import "./filters.css";
 
 type OnChangeProps = {
   status: string;
+  type: string;
   date: Date | undefined;
 };
 type SiteFiltersProps = {
   statusList: string[];
+  typeList: string[];
   onChange?: (data: OnChangeProps) => void;
 };
 
 const SiteFilters = (props: SiteFiltersProps) => {
   const [selectedDate, setSelecteddate] = useState<Date>();
   const [selectedStatus, setSelectedStatus] = useState<string>("");
+  const [selectedType, setSelectedType] = useState<string>("");
   useEffect(() => {
     props.onChange && props.onChange({
       status: selectedStatus,
+      type: selectedType,
       date: selectedDate,
     });
-  }, [selectedDate, selectedStatus]);
+  }, [selectedDate, selectedStatus, selectedType]);
+  const onTypeChange = (event: any) => {
+    setSelectedType(event.target.value);
+  };
   const onStatusChange = (event: any) => {
     setSelectedStatus(event.target.value);
   };
@@ -27,6 +34,24 @@ const SiteFilters = (props: SiteFiltersProps) => {
   }
   return (
     <div className="site-box">
+      <div className="site-field">
+        <select
+          id="filter-status"
+          className="site-field-item"
+          value={selectedType}
+          onChange={onTypeChange}
+        >
+          <option value="">Select Type</option>
+          {props.typeList.map((status: string, index: number) => (
+            <option key={index} value={status}>
+              {status}
+            </option>
+          ))}
+        </select>
+        <label htmlFor="filter-status" className="site-field-select-label">
+          Filter By Type
+        </label>
+      </div>
       <div className="site-field">
         <select
           id="filter-status"

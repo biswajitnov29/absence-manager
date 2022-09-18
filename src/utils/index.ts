@@ -19,6 +19,7 @@ export const fetchData = () => {
 
 export const formatData = (absences: any[], members: any[]) => {
   let statusList = new Set<string>();
+  let typeList = new Set<string>();
   const finalResult = absences.map((data: any) => {
     const userData: any = members.find(
       (element: any) => element.userId === data.userId
@@ -32,6 +33,7 @@ export const formatData = (absences: any[], members: any[]) => {
       status = "Requested";
     }
     statusList.add(status);
+    typeList.add(data.type);
     return {
       ...data,
       name: userData.name,
@@ -40,7 +42,7 @@ export const formatData = (absences: any[], members: any[]) => {
       period: calculatePeriod(data.startDate, data.endDate),
     };
   });
-  return { finalResult, statusList: Array.from(statusList) };
+  return { finalResult, statusList: Array.from(statusList), typeList: Array.from(typeList) };
 };
 
 export const filterData = (filterCriteria: any, rawList:any[]) => {
@@ -48,6 +50,11 @@ export const filterData = (filterCriteria: any, rawList:any[]) => {
   if (filterCriteria.status && filterCriteria.status.length > 0) {
     filterResult = filterResult.filter(
       (item) => item.status === filterCriteria.status
+    );
+  }
+  if (filterCriteria.type && filterCriteria.type.length > 0) {
+    filterResult = filterResult.filter(
+      (item) => item.type === filterCriteria.type
     );
   }
   if (filterCriteria.date) {
