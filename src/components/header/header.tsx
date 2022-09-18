@@ -1,7 +1,7 @@
 import React from "react";
 import "./header.css";
 
-const Header = () => {
+const SiteHeader = () => {
   return (
     <header className="site-header ">
       <h2 className="site-header-appname">Absence Management</h2>
@@ -41,4 +41,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default SiteHeader;

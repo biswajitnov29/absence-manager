@@ -7,14 +7,14 @@ type OnChangeProps = {
 };
 type SiteFiltersProps = {
   statusList: string[];
-  onChange: (data: OnChangeProps) => void;
+  onChange?: (data: OnChangeProps) => void;
 };
 
 const SiteFilters = (props: SiteFiltersProps) => {
   const [selectedDate, setSelecteddate] = useState<Date>();
   const [selectedStatus, setSelectedStatus] = useState<string>("");
   useEffect(() => {
-    props.onChange({
+    props.onChange && props.onChange({
       status: selectedStatus,
       date: selectedDate,
     });

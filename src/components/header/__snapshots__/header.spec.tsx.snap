@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SiteHeader /> renders correctly 1`] = `
+<div>
+  <header
+    class="site-header "
+  >
+    <h2
+      class="site-header-appname"
+    >
+      Absence Management
+    </h2>
+    <ul
+      class="site-header-menu"
+    >
+      <li
+        class="site-header-menu-item"
+      >
+        <a
+          class="site-header-menu-item-link"
+          href="#"
+        >
+          Home
+        </a>
+      </li>
+      <li
+        class="site-header-menu-item"
+      >
+        <a
+          class="site-header-menu-item-link"
+          href="#"
+        >
+          Absence Report
+        </a>
+      </li>
+      <li
+        class="site-header-menu-item"
+      >
+        <a
+          class="site-header-menu-item-link"
+          href="#"
+        >
+          Members
+        </a>
+      </li>
+      <li
+        class="site-header-menu-item"
+      >
+        <a
+          class="site-header-menu-item-link"
+          href="#"
+        >
+          Contact Us
+        </a>
+      </li>
+    </ul>
+    <ul
+      class="site-header-actionmenu"
+    >
+      <li
+        class="site-header-menu-item site-header-search"
+      >
+        <a
+          class="site-header-menu-item-link"
+          href="#"
+        >
+          Search
+        </a>
+      </li>
+      <li
+        class="site-header-menu-item "
+      >
+        <button
+          class="site-button site-button-secondary"
+        >
+          Log In
+        </button>
+      </li>
+    </ul>
+  </header>
+</div>
+`;

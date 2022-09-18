@@ -5,7 +5,7 @@ import "./pagination.css";
 type PaginationProps = {
   listSize: number;
   pageSize: number;
-  onChangeHandler: (currentPage: number) => void;
+  onChangeHandler?: (currentPage: number) => void;
 };
 
 const SitePagination = (props: PaginationProps) => {
@@ -32,7 +32,7 @@ const SitePagination = (props: PaginationProps) => {
   };
   const changePage = (pageNo: number) => {
     setCurrentPage(pageNo);
-    props.onChangeHandler(pageNo);
+    props.onChangeHandler && props.onChangeHandler(pageNo);
   };
 
   return (

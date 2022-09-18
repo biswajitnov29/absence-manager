@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SiteFilters /> renders correctly 1`] = `
+<div>
+  <div
+    class="site-box"
+  >
+    <div
+      class="site-field"
+    >
+      <select
+        class="site-field-item"
+        id="filter-status"
+      >
+        <option
+          value=""
+        >
+          Select Status
+        </option>
+        <option
+          value="Requested"
+        >
+          Requested
+        </option>
+        <option
+          value="Confirmed"
+        >
+          Confirmed
+        </option>
+        <option
+          value="Rejected"
+        >
+          Rejected
+        </option>
+      </select>
+      <label
+        class="site-field-select-label"
+        for="filter-status"
+      >
+        Filter By Status
+      </label>
+    </div>
+    <div
+      class="site-field"
+    >
+      <input
+        class="site-field-item"
+        id="filter-daterange"
+        name="birthday"
+        type="date"
+      />
+      <label
+        class="site-field-select-label"
+        for="ilter-daterange"
+      >
+        Filter By Date
+      </label>
+    </div>
+  </div>
+</div>
+`;

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
 import SiteFilters from "./components/filters/filters";
-import Header from "./components/header/header";
+import SiteHeader from "./components/header/header";
 import SiteTable from "./components/table/table";
 import { fetchData, filterData, formatData } from "./utils/index";
 
@@ -32,7 +32,7 @@ const App = () => {
   };
   return (
     <div className="App">
-      <Header></Header>
+      <SiteHeader></SiteHeader>
       <section className="site-section">
         <div className="site-container">
           <SiteFilters
