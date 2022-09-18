@@ -39,6 +39,7 @@ const App = () => {
             statusList={statusList}
             onChange={changeFilter}
           ></SiteFilters>
+          <h4>{result.length} record found</h4>
           <SiteTable list={result}></SiteTable>
         </div>
       </section>
