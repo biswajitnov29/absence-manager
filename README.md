@@ -1,5 +1,7 @@
 # Ansence Managaer
-Display absence list with filter option of status and date
+Display absence list with filter option of absence type, status and date,
+
+[Live Demo](https://absence-manager.bwg29nov.com)
 
  ```bash
  This Application worked best in Chrome browser
