@@ -1,4 +1,4 @@
-# Ansence Managaer
+# Absence Manager
 Display absence list with filter option of absence type, status and date,
 
 [Live Demo](https://absence-manager.bwg29nov.com)
