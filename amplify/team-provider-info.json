@@ -1,0 +1,23 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-absencemanager-dev-83251-authRole",
+      "UnauthRoleArn": "arn:aws:iam::201605233358:role/amplify-absencemanager-dev-83251-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::201605233358:role/amplify-absencemanager-dev-83251-authRole",
+      "Region": "ap-southeast-1",
+      "DeploymentBucketName": "amplify-absencemanager-dev-83251-deployment",
+      "UnauthRoleName": "amplify-absencemanager-dev-83251-unauthRole",
+      "StackName": "amplify-absencemanager-dev-83251",
+      "StackId": "arn:aws:cloudformation:ap-southeast-1:201605233358:stack/amplify-absencemanager-dev-83251/6ea9e020-36e9-11ed-9d4a-06e23cdb17aa",
+      "AmplifyAppId": "d1i4xw8nuqmzpv"
+    },
+    "categories": {
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d1i4xw8nuqmzpv",
+          "type": "manual"
+        }
+      }
+    }
+  }
+}
