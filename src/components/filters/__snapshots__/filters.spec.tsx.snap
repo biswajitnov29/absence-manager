@@ -15,6 +15,36 @@ exports[`<SiteFilters /> renders correctly 1`] = `
         <option
           value=""
         >
+          Select Type
+        </option>
+        <option
+          value="sickness"
+        >
+          sickness
+        </option>
+        <option
+          value="vacation"
+        >
+          vacation
+        </option>
+      </select>
+      <label
+        class="site-field-select-label"
+        for="filter-status"
+      >
+        Filter By Type
+      </label>
+    </div>
+    <div
+      class="site-field"
+    >
+      <select
+        class="site-field-item"
+        id="filter-status"
+      >
+        <option
+          value=""
+        >
           Select Status
         </option>
         <option
